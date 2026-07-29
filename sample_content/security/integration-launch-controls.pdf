@@ -1,0 +1,66 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 768 >>
+stream
+BT
+/F1 11 Tf
+72 720 Td
+14 TL
+(Security Controls for New Integrations) Tj
+T*
+(Domain: security | Owner: security-team) Tj
+T*
+() Tj
+T*
+(Which security controls must a new integration pass before launch?) Tj
+T*
+() Tj
+T*
+(Before launch, every new integration must pass:) Tj
+T*
+(  - Threat model review with Security Engineering) Tj
+T*
+(  - Dependency and secret scanning in CI) Tj
+T*
+(  - Least-privilege OAuth / API scopes documented and approved) Tj
+T*
+(  - Data classification confirmed \(no unexpected PII egress\)) Tj
+T*
+(  - Logging and alerting hooks verified in staging) Tj
+T*
+(  - Security sign-off recorded in the change ticket) Tj
+T*
+() Tj
+T*
+(Integrations that fail any control remain blocked from production) Tj
+T*
+(until remediated and re-reviewed.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001060 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1130
+%%EOF
