@@ -1,14 +1,13 @@
 # Box company brain
 
 A minimal, runnable reference app that turns scattered company content into
-**governed knowledge**: review new files with
+governed knowledge: review new files with
 [Box AI Extract](https://developer.box.com/guides/box-ai/ai-tutorials/extract-metadata-structured),
 stamp governance metadata, publish approved content to a
 [Box Hub](https://developer.box.com/guides/hubs-api/), and answer questions with
-[Box AI Ask](https://developer.box.com/guides/box-ai/ai-tutorials/ask-questions)
-grounded in that trusted layer.
+[Box AI Ask](https://developer.box.com/guides/box-ai/ai-tutorials/ask-questions).
 
-It implements the **stage → review → approve → publish → ask** flow so humans
+It implements the **stage > review > approve > publish > ask** flow so humans
 and agents work from the same permission-aware source of truth.
 
 This is the companion repository to the tutorial
@@ -95,8 +94,8 @@ box-company-brain/
    (Developer Console → App Details → Service Account ID) as **Editor** on
    the top-level **Company Brain** folder.
 
-4. **Create the Knowledge Governance metadata template** (Admin Console →
-   **Metadata** → **New**). Add fields:
+4. **Create the Knowledge Governance metadata template** (**Admin Console** >
+   **Metadata** > **New**). Add fields:
 
    | Field name | Type |
    | --- | --- |
@@ -175,10 +174,10 @@ python health.py 70
    so every review returns the same fields.
 2. Results are written as **Knowledge Governance** metadata (`staged`,
    unassigned owner) so status is searchable and auditable.
-3. A human sets an owner and runs `publish.py`: status → `approved`, file moves
+3. A human sets an owner and runs `publish.py`: status > `approved`, file moves
    to `approved/`, folder is added to a domain Hub.
 4. `ask.py` queries that Hub with citations. Hubs and Box AI inherit Box
-   permissions — agents only see what the Service Account (or user) can access.
+   permissions. Agents only see what the Service Account (or user) can access.
 5. Keep agent rules in `operating-rules/` and generated work in `outputs/` so
    every agent reads the same current rules and writes back under governance.
 
